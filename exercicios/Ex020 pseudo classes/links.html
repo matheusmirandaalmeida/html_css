@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elementos
+            > = clildren (Filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        * {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited { /* para o link quando a pessoa já visitou o link*/
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+        
+        a::before {
+            content: '➝ ';
+        }
+
+        .especial {
+            background-color: chocolate;
+        }
+
+        .especial::before {
+            content: '➩';
+        }
+
+    </style>
+    <title>Pesonalizando links</title>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" class="especial" target="_blank">Repositório github</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank">Canal Do youtube</a></li>
+        <li><a href="https://www.ev.org.br" target="_blank">Fundação Bradesco</a></li>
+    </ul>
+</body>
+</html>

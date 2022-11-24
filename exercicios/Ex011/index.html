@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens que adaptam pelo tamanho da tela</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+    <picture><!--picture para imagens, um alocação de imagem-->
+        <source media="(max-width: 750px)" srcset="img/one-piece-wallpaper-21.jpg" type="image/jpg"> <!--Tamanho pequeno-->
+        <source media="(max-width: 1120px)" srcset="img/one-piece-wallpaper-700.jpg" type="image/jpg"><!--Tamho médio-->
+        <img src="img/one-piece-wallpaper-1080.jpg" alt="Imagem flexivel"> <!--tamanho grande-->
+    </picture> 
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir música em HTML5.</p>
+    <audio preload="metadata" controls> <!--Aqui por causa do source ele irá tentar todas as opções caso um não for-->
+        <source src="midia/How's It Supposed to Feel (Instrumental) - NEFFEX.mp3" type="audio/mpeg">
+        <!-- ou podederia adicionar outros tipos de audio como o type="audio/ogg" se caso o mp3 não for
+        ou do tipo type="wav", porém, esse wav é muito pesado (Não recomendável )-->
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/How's It Supposed to Feel (Instrumental) - NEFFEX.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+
+</body>
+</html>
