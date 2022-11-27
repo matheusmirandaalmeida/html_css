@@ -10,20 +10,32 @@
         /* 
             background-size: contain; = PARA MOSTRAR TODA A IMAGEM
             background-size: cover; = COVER PARA ADAPTAR A IMAGEM MAS COM CORTES
+
+            background-attachment: fixed; Definir se a imagem vai acompanhar o scroll ou ficará fixada
         */
 
         body {
+            /*
             height: 97vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; Definir se a imagem vai acompanhar o scroll ou ficará fixada*/
+
+            /*
+                Shortethand - background
+                    color > imagem > position > repeat > [sizer] > attachment OBS: o SIZE ainda não consta no SHORTEHAND 
+            */ 
+            background: black url('imagens/wallpaper002.jpg')center center no-repeat fixed;
+            background-size: cover;
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -35,7 +47,8 @@
 <body>
     <main>
         <h1>Teste de Imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum optio quod, libero, minus ea odit beatae enim unde vel cumque incidunt dignissimos perspiciatis temporibus. At amet dolorem harum ducimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, recusandae. Voluptate sequi sit dolores architecto porro aliquam eius non soluta vitae distinctio. Neque alias molestias ex odit placeat quibusdam mollitia! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint earum adipisci quibusdam dolorum autem vero, nobis suscipit, facilis, illo neque aperiam praesentium. Accusamus dolorum quo, doloremque placeat cum molestiae soluta!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rerum optio quod, libero, minus ea odit beatae enim unde vel cumque incidunt dignissimos perspiciatis temporibus. At amet dolorem harum ducimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, recusandae. Voluptate sequi sit dolores architecto porro aliquam eius non soluta vitae distinctio. Neque alias molestias ex odit placeat quibusdam mollitia! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint earum adipisci quibusdam dolorum autem vero, nobis suscipit, facilis, illo neque aperiam praesentium. Accusamus dolorum quo, doloremque placeat cum molestiae soluta! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores reiciendis sit omnis a placeat suscipit facilis dicta ad molestiae consequuntur fugiat aperiam, delectus perspiciatis deleniti nobis modi quae possimus optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa ab sed cumque animi modi a repudiandae ipsam excepturi tenetur labore facere sunt iure, impedit atque dolor blanditiis suscipit ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti velit sit, eaque nulla tenetur rerum, fugit id fugiat nostrum magni repellendus accusamus, eos beatae temporibus doloremque doloribus maiores alias aliquam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci unde eligendi, esse veritatis, tempore enim laboriosam cumque dicta ratione ad praesentium deserunt? Quos optio tempore voluptas officiis, modi officia non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam earum excepturi rerum vero deserunt, ratione quaerat recusandae est? Facere, pariatur? Excepturi doloremque dolores laborum praesentium recusandae dolore necessitatibus minus eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia libero eligendi consectetur fugiat nemo. Quis odio eaque perspiciatis minus nisi ullam iste nobis quasi maiores eligendi, voluptate fugiat neque. Corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam non veniam a asperiores voluptate! Similique dolorum iusto, aliquid expedita error veniam veritatis magni maxime accusantium repudiandae eius itaque cumque aut.
+        </p>
     </main>
 </body>
 </html>
