@@ -25,7 +25,7 @@ header > p {
     padding-bottom: 50px;
 }
 
-header, a, footer a {
+header, a, footer a {  /*LINKS*/
     color: white;
     text-decoration: none;
     font-weight: bolder;
@@ -37,7 +37,7 @@ header a:hover, footer a:hover {
 
 section {
     padding-left: 30px;
-    line-height: 2em;
+    line-height: 2em;  /* Espaço entre as letras*/
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
@@ -53,7 +53,7 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    width: 400px;  /*Espaço do bloco preto*/
     background-color: rgba(5, 5, 5, 0.452);
 }
 
