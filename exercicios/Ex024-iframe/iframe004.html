@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum sunt reiciendis sit quam dolores officia at provident exercitationem explicabo tempore fugiat, sapiente recusandae esse tenetur ut quae quo velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, porro sint ratione laborum quibusdam ullam praesentium veritatis quis! Exercitationem accusamus eius qui itaque tenetur quidem officia vel id delectus minus!</p>
+
+    <!--referrerpolicy="" = Para limitar o acessor 
+        referrerpolicy="no-referrer-when-downgrade" ESSE É O VALOR PADRÃO
+        referrerpolicy="no-referrer" É PARA DIZER QUE O QUE ESTIVER CARREGADO NO IFRAME ELE NÃO IRÁ COLETAR DADOS DO USUÁRIOS
+
+        SANDBOX ="SANDBOX" BLOQUEIA QUALQUER ACESSO. SEGURANÇA TOTAL.
+        sandbox="alllow-same-origin allow-forms" PARA LIBERAR ALGO ESPECIFICO.
+    -->
+    <iframe src="paginas-extras/pag004.html"  sandbox="alllow-same-origin allow-forms" referrerpolicy="no-referrer"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam hic necessitatibus quia. Aliquam aperiam vel rem voluptatibus reiciendis quaerat tenetur expedita quos, dignissimos, perspiciatis laboriosam error, molestiae delectus blanditiis iste? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti beatae accusamus consequatur doloribus quibusdam, cum aut amet facilis quae officia repellendus, odit fugiat. Dolorem consequatur amet eos eius harum nemo!</p>
+</body>
+</html>
