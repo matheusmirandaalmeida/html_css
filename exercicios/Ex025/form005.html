@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgb(55, 134, 187);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+        
+        div {
+            background-color: white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 10px;
+            margin: auto;
+            position: relative;
+            top: 300px;
+            left: 300px;
+            transform: translate(-300px, -150px);
+            box-shadow: 2px 2px 5px black;
+        }
+
+        fieldset {
+            width: 250px;
+            border-radius: 5px;
+        }
+
+        form {
+            width: 200px;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exemplo de formularios: </h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo:</legend>
+                <input type="radio" name="sexo" id="imasc" value="M" checked>
+                <label for="imasc">Masculino </label>
+                <input type="radio" name="sexo" id="ifem" value="F">
+                <label for="ifem">Feminino</label>
+            </fieldset>
+            <fieldset>
+                <legend>Esportes favoritos: </legend>
+                <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label> <br>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+                <input type="checkbox" name="esnart" id="iesnat"> <label for="iesnat">Natação</label> <br>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
