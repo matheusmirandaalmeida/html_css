@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        body {
+            background-color: rgb(45, 108, 124);
+        }
+
+        form {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 40px;
+            margin: auto;
+            margin-top: 110px;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        h1 {
+            position: relative;
+            margin: auto;
+            margin-top: 40px;
+            color: white;
+            padding: 40px;
+            background-color: black;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        footer {
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario:</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p>
+            <label for="iano">Que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+        <p><input type="reset" value="Limpar"></p>
+    </form>
+    <footer>
+        <p>Matheus M. Almeida</p>
+    </footer>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
