@@ -34,6 +34,7 @@ span#burguer:hover {
 
 nav {
     display: none;
+    text-align: center;
 }
 
 nav > ul {
@@ -48,6 +49,7 @@ nav > ul > li > a {
     background-color: rgb(77, 76, 76);
     color: white;
     border-top: 2px solid gray;
+    border-radius: 10px;
 }
 
 nav > ul > li > a:hover {
@@ -61,6 +63,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
 }
 
 main > article > h2 {
